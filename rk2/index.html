@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РК</title>
+</head>
+<body>
+    <form id="registrationForm" action="example.php" method="post">
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Пароль (минимум 8 символов, числа, знаки !? и большие буквы латинского алфавита):</label>
+        <br>
+        <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[!\\?])[A-Za-z\d!\\?]{8,}$" required><br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+    
+    <form id="messageForm" action="example.php" method="post" style="display: none;">
+        <input type="text" name="message" placeholder="Введите сообщение с хэштегом">
+        <button type="submit">Отправить</button>
+    </form>
+    
+    <script src="main.js"></script>
+</body>
+</html>
